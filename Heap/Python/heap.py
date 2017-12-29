@@ -82,6 +82,9 @@ class Heap(ABC):
 		self.heapify_down(0)
 		return ans
 
+	def is_empty(self):
+		return (len(self.heap) == 0)
+
 
 class MaxHeap(Heap):
 	def __init__(self):
