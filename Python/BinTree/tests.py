@@ -29,8 +29,22 @@ def count_non_leaf_test():
 	print(root.count_non_leaf())
 	return
 
+def get_path_from_root_test(value = 1):
+	root = get_tree()
+	path = root.get_path_from_root(value)
+	if path:
+		print(path)
+	else:
+		print("Not Found!!!")
+	return
+
+def LCA_test():
+	root = get_tree()
+	print(root.get_lowest_common_ancestor(1,2,method='recursion'))
+	return
+
 def main():
-	count_non_leaf_test()
+	LCA_test()
 	return
 
 if __name__ == '__main__':
