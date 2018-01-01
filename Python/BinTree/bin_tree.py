@@ -35,3 +35,27 @@ class bin_tree_node(object):
 		if self.has_right_child():
 			right_count = self.get_right_child().count_nodes() 
 		return 1 + left_count + right_count
+
+	def inorder_print(self):
+		if self.has_left_child():
+			self.get_left_child().inorder_print()
+		print(self.get_value())
+		if self.has_right_child():
+			self.get_right_child().inorder_print()
+		return
+
+	def preorder_print(self):
+		print(self.get_value())
+		if self.has_left_child():
+			self.get_left_child().preorder_print()
+		if self.has_right_child():
+			self.get_right_child().preorder_print()
+		return
+
+	def postorder_print(self):
+		if self.has_left_child():
+			self.get_left_child().postorder_print()
+		if self.has_right_child():
+			self.get_right_child().postorder_print()
+		print(self.get_value())
+		return
