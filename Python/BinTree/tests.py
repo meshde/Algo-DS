@@ -14,7 +14,7 @@ def get_tree():
 
 	return root
 
-def main():
+def traversal_test():
 	root = get_tree()
 	print("-----Inorder-----")
 	root.inorder_print()
@@ -22,6 +22,15 @@ def main():
 	root.preorder_print()
 	print("-----Postorder-----")
 	root.postorder_print()
+	return
+
+def count_non_leaf_test():
+	root = get_tree()
+	print(root.count_non_leaf())
+	return
+
+def main():
+	count_non_leaf_test()
 	return
 
 if __name__ == '__main__':

@@ -27,6 +27,9 @@ class bin_tree_node(object):
 	def has_right_child(self):
 		return not (self.get_right_child() == None)
 
+	def is_leaf(self):
+		return (not (self.has_right_child() or self.has_left_child()))
+
 	def count_nodes(self):
 		left_count = 0
 		right_count = 0
@@ -34,6 +37,17 @@ class bin_tree_node(object):
 			left_count = self.get_left_child().count_nodes()
 		if self.has_right_child():
 			right_count = self.get_right_child().count_nodes() 
+		return 1 + left_count + right_count
+
+	def count_non_leaf(self):
+		if self.is_leaf():
+			return 0
+		left_count = 0
+		right_count = 0
+		if self.has_left_child():
+			left_count = self.get_left_child().count_non_leaf()
+		if self.has_right_child():
+			right_count = self.get_right_child().count_non_leaf() 
 		return 1 + left_count + right_count
 
 	def inorder_print(self):
