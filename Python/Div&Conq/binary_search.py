@@ -36,3 +36,12 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+"""
+SIMILAR PROBLEMS
+
+Problem: Given a sorted array and a value x, the floor of x is the largest element in array smaller than or equal to x. Write efficient functions to find floor of x.
+Solution:
+----> The Binary Search function above can be modified by adding a conditional to check whether x lies between the middle element and it's left neighbour.
+"""

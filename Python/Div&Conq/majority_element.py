@@ -30,3 +30,23 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+
+"""
+SIMILAR PROBLEMS
+
+Problem: Count Occurences of x in given SORTED array.
+Solution:
+----> Use the above modification to find the index of the first occurence of x in the array.
+----> Use a similar modification to find the index of the last occurence.
+----> The difference between the two indices is the count of x in the array.
+
+Problem: Given an array of 1s and 0s which has all 1s first followed by all 0s. Find the number of 0s.
+Solution:
+----> Find the index of the first occurence of 0 using the above modification.
+----> The index of the last occurence is n-1.
+----> The difference between the two indices is the rewuired count.
+
+Problem: 
+"""

@@ -30,3 +30,12 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+"""
+SIMILAR PROBLEMS
+
+Problem: A sorted array is rotated at some unknown point, find the minimum element in it.
+Solution:
+----> Can be solved similar to the above problem with slight changes.
+"""
