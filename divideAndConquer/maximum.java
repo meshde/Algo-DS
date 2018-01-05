@@ -3,10 +3,10 @@ class maximum
 {
 	 public static void main(String args[])
 	 {
-int arr[]={10,20,30,40,50,14,13,12};
+int arr[]={10,20,30,40,50,25,20,15};
 
 maximum m=new maximum();
-System.out.println(m.binary(arr,0,arr.length));
+System.out.println(m.binary(arr,0,arr.length-1));
 
 		
 
@@ -25,9 +25,9 @@ System.out.println(m.binary(arr,0,arr.length));
 			 else
 			 {
 				 if(arr[k]<arr[k+1]&&arr[k]>arr[k-1])
-					 return binary(arr,k+1,arr.length);
+					 return binary(arr,k+1,h	);
 				 else if(arr[k]<arr[k+1]&&arr[k]>arr[k-1])
-					 return binary(arr,0,k);
+					 return binary(arr,l,k);
 			 }
 			 
 		 }
