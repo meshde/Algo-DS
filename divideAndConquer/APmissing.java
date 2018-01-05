@@ -21,9 +21,9 @@ class APmissing
 			else
 			{
 				if(arr[k]>(1+(k*diff)))
-					return binary(arr,0,k);
+					return binary(arr,l,k);
 				else
-					return binary(arr,k+1,arr.length);
+					return binary(arr,k+1,h);
 			}
 		}
 		return -1;
