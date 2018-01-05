@@ -4,7 +4,7 @@ class noofoccurrence
 {
  public static void main(String args[])
  {
-	 int arr[]={1,1,1,2,2,2,2,3,3};
+	 int arr[]={1,1,2,2,2,2,3,3};
 	 Scanner sc=new Scanner(System.in);
 	 System.out.println("enter no:");
 	 int no=sc.nextInt();
@@ -33,9 +33,9 @@ class noofoccurrence
 		  else
 		 {
 			 if(arr[k]>n)
-				 return getfirst(arr, n, 0, k);
+				 return getfirst(arr, n, l, k);
 			 else
-				 return getfirst(arr,n,k,arr.length);
+				 return getfirst(arr,n,k+1,h);
 		 }
 		 }
 					 
@@ -57,9 +57,9 @@ return 0;
 			  else
 			 {
 				 if(arr[k]>n)
-					 return getlast(arr, n, 0, k);
+					 return getlast(arr, n, l, k);
 				 else
-					 return getlast(arr,n,k,arr.length);
+					 return getlast(arr,n,k+1,h);
 			 }
 					 
 		}
