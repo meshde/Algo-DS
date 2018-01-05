@@ -25,9 +25,9 @@ public static void main(String args[])
 		else
 		{
 			if(arr[key]>n)
-				return search(arr, n, 0, key);
+				return search(arr, n, a, key);
 			else
-				return search(arr,n, key, arr.length);
+				return search(arr,n, key, b);
 		}
 		}
 		return 0;
