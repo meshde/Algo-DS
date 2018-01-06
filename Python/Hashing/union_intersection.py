@@ -61,3 +61,10 @@ def main():
 if __name__ == '__main__':
 	main()
 
+
+"""
+SIMILAR PROBLEMS
+
+Problem: Given two sets represented by two arrays, check if the given two sets are disjoint or not.
+Solution: This can be solved by similarly inserting the elements of the first array into the map/dict, and when traversing through the second array if the element is found in the map/dict and if the value is not 0, we return False.
+"""

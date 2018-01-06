@@ -27,3 +27,12 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+
+"""
+SIMILAR PROBLEMS
+
+Problem: Given an array of integers, and a number ‘sum’, find the number of pairs of integers in the array whose sum is equal to ‘sum’.
+Solution: This can be solved by slightly modifying the above code.
+"""
