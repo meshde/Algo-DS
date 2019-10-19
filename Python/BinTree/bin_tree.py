@@ -4,6 +4,21 @@ class bin_tree_node(object):
         self.left = None
         self.right = None
 
+    def __eq__(self, other):
+        if self is None and other is None:
+            return True
+
+        if self is None or other is None:
+            return False
+
+        if isinstance(other, int):
+            return self.get_value() == other
+
+        return (self.value == other.value
+                and self.get_left_child() == other.get_left_child()
+                and self.get_right_child() == other.get_right_child()
+               )
+
     def get_value(self):
         return self.value
 

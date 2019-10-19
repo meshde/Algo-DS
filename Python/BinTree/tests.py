@@ -14,6 +14,27 @@ def get_tree():
 
 	return root
 
+def add_node_to_bst(bst, val):
+    if val < bst.get_value():
+        if bst.has_left_child():
+            add_node_to_bst(bst.get_left_child(), val)
+        else:
+            bst.set_left_child(bin_tree_node(val))
+    else:
+        if bst.has_right_child():
+            add_node_to_bst(bst.get_right_child(), val)
+        else:
+            bst.set_right_child(bin_tree_node(val))
+
+def get_bst(arr):
+    root_val = arr[0]
+    bst = bin_tree_node(root_val)
+
+    for val in arr[1:]:
+        add_node_to_bst(bst, val)
+
+    return bst
+
 def traversal_test():
 	root = get_tree()
 	print("-----Inorder-----")
